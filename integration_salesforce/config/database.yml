@@ -24,6 +24,12 @@ default: &default
 development:
   <<: *default
   database: integration_salesforce_development
+  adapter: postgresql  
+  host: "ec2-54-197-224-173.compute-1.amazonaws.com"                           # HOST 
+  port: "5432"                           # Port  
+  database: "deo75rehjo0okj"              # Database Name  
+  username: "hiwtmlkgpdoumg"                  # User Name  
+  password: "E7cnQMKa51V_y5MBbU1OyhfNPI" 
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
