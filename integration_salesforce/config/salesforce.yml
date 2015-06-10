@@ -1,0 +1,11 @@
+development: &default
+  client_key: 3MVG9sG9Z3Q1RlbdYQ3E9QOqu0StvSZl1q6W3nEvOUvYmvoJ0Du_dbjhD_jMyrsOmb_K_DY9sS42QuR_y3aoG
+  client_secret: 4306282343219049180
+
+test:
+  <<: *default
+
+production:
+  client_key: 3MVG9sG9Z3Q1RlbdYQ3E9QOqu0StvSZl1q6W3nEvOUvYmvoJ0Du_dbjhD_jMyrsOmb_K_DY9sS42QuR_y3aoG
+  client_secret: 4306282343219049180
+

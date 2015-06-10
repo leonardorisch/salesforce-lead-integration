@@ -4,8 +4,26 @@
   <title>IntegrationSalesforce</title>
 <body>
 
-Name <input type="text" class="input" id="name"/>
-Last Name <input type="text" class="input" id="lastname"/> 
+<%= form_tag({controller: "load", action: "create"}, method: "post") do %>
+    <%= label_tag(:name, "Name", class: "input", id: "name") %>
+    <%= text_field_tag(:name) %>
+    <%= label_tag(:lastname, "Last Name", class: "input", id: "lastname") %>
+    <%= text_field_tag(:lastname) %>
+    <%= label_tag(:email, "Email", class: "input", id: "email") %>
+    <%= text_field_tag(:email) %>
+    <%= label_tag(:company, "Company", class: "input", id: "company") %>
+    <%= text_field_tag(:company) %>
+    <%= label_tag(:jobtitle, "Job Title", class: "input", id: "job_title") %>
+    <%= text_field_tag(:jobtitle) %>
+    <%= label_tag(:phone, "Phone", class: "input", id: "phone") %>
+    <%= text_field_tag(:phone) %>
+    <%= label_tag(:website, "Website", class: "input", id: "website") %>
+    <%= text_field_tag(:website) %>
+	<%= submit_tag("Confirmar") %>
+    <% end %>
+<%= link_to 'Connect with Salesforce', '/auth/salesforce' %>
+
+
 
 </body>
 </html>
