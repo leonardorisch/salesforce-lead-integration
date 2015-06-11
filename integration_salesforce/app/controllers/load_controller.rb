@@ -1,11 +1,7 @@
-require 'importlead'
 class LoadController < ApplicationController
-  def index
-  	hello = ImportLead.new
-  	puts hello.say
-  end
 
   def create
-  	@person = { name: params[:name] }
+  	user = User.new
+  	@person = { name: params[:name], lastname: params[:lastname]  }
   end
 end

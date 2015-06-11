@@ -4,7 +4,7 @@
   <title>IntegrationSalesforce</title>
 <body>
 
-<%= form_tag({controller: "load", action: "create"}, method: "post") do %>
+<%= form_tag({controller: "users", action: "create"}, method: "post") do %>
     <%= label_tag(:name, "Name", class: "input", id: "name") %>
     <%= text_field_tag(:name) %>
     <%= label_tag(:lastname, "Last Name", class: "input", id: "lastname") %>
