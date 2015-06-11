@@ -23,15 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: integration_salesforce_development
+  database: d454qitfgrs8sm
   adapter: postgresql  
   host: "ec2-54-197-224-173.compute-1.amazonaws.com"                           # HOST 
   port: "5432"                           # Port  
   database: "deo75rehjo0okj"              # Database Name  
   username: "hiwtmlkgpdoumg"                  # User Name  
   password: "E7cnQMKa51V_y5MBbU1OyhfNPI"
-  client_key: "3MVG9sG9Z3Q1RlbdYQ3E9QOqu0StvSZl1q6W3nEvOUvYmvoJ0Du_dbjhD_jMyrsOmb_K_DY9sS42QuR_y3aoG"
-  client_secret: "4306282343219049180"
 
 
   # The specified database role being used to connect to postgres.
@@ -87,8 +85,12 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
+development:
   <<: *default
-  database: integration_salesforce_production
-  username: integration_salesforce
-  password: <%= ENV['INTEGRATION_SALESFORCE_DATABASE_PASSWORD'] %>
+  database: d454qitfgrs8sm
+  adapter: postgresql  
+  host: "ec2-54-197-224-173.compute-1.amazonaws.com"                           # HOST 
+  port: "5432"                           # Port  
+  database: "deo75rehjo0okj"              # Database Name  
+  username: "hiwtmlkgpdoumg"                  # User Name  
+  password: "E7cnQMKa51V_y5MBbU1OyhfNPI"
