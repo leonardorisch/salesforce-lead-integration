@@ -1,28 +1,31 @@
-== README
+== Integration Sales Force
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An application to integrate a person and a salesforce's lead.
 
-Things you may want to cover:
+== Requirements
 
-* Ruby version
+Ruby version: 2.x
+Rails version: 2.4.1
+Heroku
 
-* System dependencies
+== Quick start
 
-* Configuration
+Clone project: git clone git@github.com:leonardorisch/Integration-SalesForce.git
+Run command =bundle install= to import dependencies
+Run =rake db:migrate= to import database
+Run =rails bin/rails server= for local execution
 
-* Database creation
+Access http://localhost:3000
 
-* Database initialization
+==Deploy instrunctions
 
-* How to run the test suite
+=heroku login= and add your credentials
 
-* Services (job queues, cache servers, search engines, etc.)
+=heroku run rake:db migrate= to import database into server
 
-* Deployment instructions
+=git add 
+ git commit -m "first deploy"
+ git push heroku master= to deploy into a server
 
-* ...
+ More: https://devcenter.heroku.com/articles/getting-started-with-rails4 
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
