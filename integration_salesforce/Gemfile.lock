@@ -179,7 +179,7 @@ DEPENDENCIES
   jquery-rails
   omniauth-salesforce
   pg
-  rails (= 4.2.1)
+  rails
   rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

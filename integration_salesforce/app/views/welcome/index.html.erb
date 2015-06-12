@@ -5,23 +5,24 @@
 <body>
 
 <%= form_tag({controller: "users", action: "create"}, method: "post") do %>
-    <%= label_tag(:name, "Name", class: "input", id: "name") %>
-    <%= text_field_tag(:name) %>
-    <%= label_tag(:lastname, "Last Name", class: "input", id: "lastname") %>
-    <%= text_field_tag(:lastname) %>
-    <%= label_tag(:email, "Email", class: "input", id: "email") %>
-    <%= text_field_tag(:email) %>
-    <%= label_tag(:company, "Company", class: "input", id: "company") %>
-    <%= text_field_tag(:company) %>
-    <%= label_tag(:jobtitle, "Job Title", class: "input", id: "job_title") %>
-    <%= text_field_tag(:jobtitle) %>
-    <%= label_tag(:phone, "Phone", class: "input", id: "phone") %>
-    <%= text_field_tag(:phone) %>
-    <%= label_tag(:website, "Website", class: "input", id: "website") %>
-    <%= text_field_tag(:website) %>
+    <%= label_tag(:name, "Name", class: "input", id: "name") %><br>
+    <%= text_field_tag(:name) %><br>
+    <%= label_tag(:lastname, "Last Name", class: "input", id: "lastname") %><br>
+    <%= text_field_tag(:lastname) %><br>
+    <%= label_tag(:email, "Email", class: "input", id: "email") %><br>
+    <%= text_field_tag(:email) %><br>
+    <%= label_tag(:company, "Company", class: "input", id: "company") %><br>
+    <%= text_field_tag(:company) %><br>
+    <%= label_tag(:jobtitle, "Job Title", class: "input", id: "job_title") %><br>
+    <%= text_field_tag(:jobtitle) %><br>
+    <%= label_tag(:phone, "Phone", class: "input", id: "phone") %><br>
+    <%= text_field_tag(:phone) %><br>
+    <%= label_tag(:website, "Website", class: "input", id: "website") %><br>
+    <%= text_field_tag(:website) %><br>
 	<%= submit_tag("Confirmar") %>
     <% end %>
-<%= link_to 'Connect with Salesforce', '/auth/salesforce' %>
+<%= link_to 'Connect with Salesforce', '/auth/salesforce'%>
+ 
 
 
 
