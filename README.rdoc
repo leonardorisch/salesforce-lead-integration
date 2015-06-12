@@ -1,4 +1,4 @@
-== Integration Sales Force
+== Salesforce Integration
 
 An application to integrate an user with a salesforce's lead.
 
