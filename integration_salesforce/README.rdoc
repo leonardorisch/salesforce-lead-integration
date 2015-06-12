@@ -5,25 +5,30 @@ An application to integrate a person and a salesforce's lead.
 == Requirements
 
 Ruby version: 2.x
+
 Rails version: 2.4.1
+
 Heroku
 
 == Quick start
 
 Clone project: git clone git@github.com:leonardorisch/Integration-SalesForce.git
+
 Run command =bundle install= to import dependencies
+
 Run =rake db:migrate= to import database
+
 Run =rails bin/rails server= for local execution
 
 Access http://localhost:3000
 
 ==Deploy instrunctions
 
-=heroku login= and add your credentials
+heroku login= and add your credentials
 
-=heroku run rake:db migrate= to import database into server
+heroku run rake:db migrate= to import database into server
 
-=git add 
+ git add 
  git commit -m "first deploy"
  git push heroku master= to deploy into a server
 
