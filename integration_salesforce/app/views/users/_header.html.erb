@@ -1,14 +1,57 @@
-<div class="logo"><%= image_tag("rd.png") %></div>
+<div id="pre-header">
+	<div class="row">	
+	<div class="logo"><%= image_tag("rd.png") %></div>
+	<ul class="nav navbar-nav">
+
+	    <li class="dropdown">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Conteúdo <span class="caret"></span></a>
+		    <ul class="dropdown-menu">
+		        <li><a href="#">Materiais Educativos</a></li>
+		        <li><a href="#">Blog</a></li>
+		        <li><a href="#">Cursos Online</a></li>
+		    </ul>
+	      
+	    </li>
+	    <li class="dropdown">
+	    	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+		        <li><a href="#">RD Station</a></li>
+		        <li><a href="#">Implementação</a></li>
+		    </ul>
+	    </li>
+	    <li class="dropdown">
+	    	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Parceria <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+		        <li><a href="#">Programa</a></li>
+		        <li><a href="#">Níveis de Parceria</a></li>
+		        <li><a href="#">Consultaria Engage</a></li>
+		        <li><a href="#">Blog</a></li>
+		    </ul>
+	    </li>
+	    <li class="dropdown">
+	    	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+		        <li><a href="#">A empresa</a></li>
+		        <li><a href="#">Trabalhe conosco</a></li>
+		        <li><a href="#">Contato</a></li>
+		    </ul>
+	    </li>
+	    <li><a href="#">Eventos</a></li>
+	</ul>
+	</div>
+</div>
 <div id="header" class="container">
 	
 	<div class="row">
 		<div class="col-md-3"><%= image_tag("rdstation.png") %></div>
 		<div class="header-links">
-			<div class="col-md-2">Funcionalidades</div>
-		    <div class="col-md-2">Planos e Preços</div>
-		    <div class="col-md-2">Teste Grátis</div>
-		    <div class="col-md-2">Estudos de caso</div>
-		    <div class="col-md-1">Blog</div>
+			<ul class="nav nav-pills">
+			  <li><a href="#">Funcionalidades</a></li>
+			  <li><a href="#">Planos e Preços</a></li>
+			  <li><a href="#">Teste Grátis</a></li>
+			  <li><a href="#">Estudos de caso</a></li>
+			  <li><a href="#">Blog</a></li>
+			</ul>
 	    </div>
 	</div>
 </div>

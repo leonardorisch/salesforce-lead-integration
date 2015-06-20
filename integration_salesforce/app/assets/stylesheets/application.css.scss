@@ -6,13 +6,31 @@
 }
 
 body {
+	background-color: #F5F5F5;
 }
+
 .logo {
-	 img {
-		width: 166px;
-		height: 50px;
-	 }
+	margin-left: 107px;
+	float:left;
 }
+
+.navbar-nav li a{
+	color: #919191
+}
+
+.navbar-nav li a:hover{
+	color: #3A87AD
+}
+
+.navbar-nav li a:hover{
+	color: #3A87AD
+}
+
+.dropdown-menu > li > a{
+	padding: 10px 20px !important;
+
+}
+
 #header {
 	width:100%;
 	height: 130px;
@@ -26,7 +44,8 @@ body {
 	}
 
 	img {
-		height:130px;
+		margin-top:25px;
+		margin-left:73px;
 	}
 
 	.col-md-2, .col-md-1 {
@@ -37,6 +56,20 @@ body {
 
 	.header-links {
 		float:right;
+		margin-top: 40px;
+		margin-right: 60px;
+	}
+
+	.nav-pills li a {
+		color: #FFF;
+		opacity: 0.9;
+		font-size: 16px !important;
+	}
+
+	.nav-pills li a:hover {
+		background-color:#846D50;
+		color: #FFF;
+		opacity: 1;	
 	}
 
 }
