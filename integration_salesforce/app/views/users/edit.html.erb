@@ -1,6 +1,19 @@
-<h1>Editing User</h1>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IntegrationSalesforce</title>
+  <%= stylesheet_link_tag       'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render 'header' %>
+<div class="title"><h1>Editing User</h1></div>
 <%= render 'form' %>
 <%= link_to 'Connect with Salesforce', '/auth/salesforce'%>
 <%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>
+</div>
+</body>
+</html>
+

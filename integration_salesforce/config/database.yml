@@ -21,16 +21,6 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
 
-development:
-  <<: *default
-  database: d454qitfgrs8sm
-  adapter: postgresql  
-  host: "ec2-54-197-224-173.compute-1.amazonaws.com"                           # HOST 
-  port: "5432"                           # Port  
-  database: "deo75rehjo0okj"              # Database Name  
-  username: "hiwtmlkgpdoumg"                  # User Name  
-  password: "E7cnQMKa51V_y5MBbU1OyhfNPI"
-
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -64,7 +54,13 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: integration_salesforce_test
+  database: d454qitfgrs8sm
+  adapter: postgresql  
+  host: "ec2-54-197-224-173.compute-1.amazonaws.com"                           # HOST 
+  port: "5432"                           # Port  
+  database: "deo75rehjo0okj"              # Database Name  
+  username: "hiwtmlkgpdoumg"                  # User Name  
+  password: "E7cnQMKa51V_y5MBbU1OyhfNPI"
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is

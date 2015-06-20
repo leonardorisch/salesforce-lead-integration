@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>IntegrationSalesforce</title>
-  <%= stylesheet_link_tag       'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<%= render '../users/header' %>
-<div class="container main">
 <%= form_tag({controller: "users", action: "create"}, method: "post") do %>
     <div class="form-group">
     <%= label_tag(:name, "Name", class: "input", id: "name") %><br>
@@ -38,11 +27,5 @@
     <%= label_tag(:website, "Website", class: "input", id: "website") %><br>
     <%= text_field_tag(:website, nil, class: "form-control",placeholder: "Website"  ) %>
     </div>
-	<%= submit_tag("Confirmar") %>
+  <%= submit_tag("Confirmar") %>
 <% end %>
- </div>
-
-
-
-</body>
-</html>

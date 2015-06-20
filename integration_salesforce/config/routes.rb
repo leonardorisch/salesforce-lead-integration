@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :users
-  root 'welcome#index'
-  get 'welcome/index'
+  root 'users#index'
+  get 'users/index'
   post 'load/create'
   get 'auth/salesforce/callback', to: 'salesforce#callback'
   # The priority is based upon order of creation: first created -> highest priority.
