@@ -4,15 +4,20 @@
   <title>IntegrationSalesforce</title>
   <%= stylesheet_link_tag       'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'form', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <%= render 'header' %>
 <div class="container main">
-  <%= link_to 'Cadastrar Usuário', 'users/new' %>
+	<div class="welcome">
+		<h1>Create account</h1> <span class="comment"> click on button below to start:</span><br/>
+  		<%= link_to 'Create Account', 'users/new', class: 'btn btn-default', role: 'button' %>
+  	</div>
  </div>
 
 
+<%= render 'footer' %>
 
 </body>
 </html>

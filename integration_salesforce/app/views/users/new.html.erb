@@ -2,17 +2,24 @@
 <head>
   <%= stylesheet_link_tag       'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'form', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>	
 </head>
 <body>
 
 <%= render 'header' %>
-<div class="title"><h1>New User</h1></div>
+
 <div class="container main">
-<%= render 'form_index' %>
-<%= link_to 'Connect with Salesforce', '/auth/salesforce' %>
-<%= link_to 'Back', users_path %>
+	<div class="content-wrapper">
+		<h1>Create Account</h1><br/>
+			<%= render 'form_index' %>
+			<div class="alert alert-danger message warning" role="alert"></div>
+			<%= link_to 'Back', users_path, class: "btn btn-default", role: "button" %>
+  	</div>
+
 </div>
+
+<%= render 'footer' %>
 
 
 </body>

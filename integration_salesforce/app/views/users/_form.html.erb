@@ -13,33 +13,33 @@
 
   <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name, class: "form-control", placeholder: "Name" %>
+    <%= f.text_field :name, class: "form-control name", placeholder: "Name * " %>
   </div>
   <div class="form-group">
     <%= f.label :lastname %><br>
-    <%= f.text_field :lastname, class: "form-control", placeholder: "Last name" %>
+    <%= f.text_field :lastname, class: "form-control lastname", placeholder: "Last name * " %>
   </div>
   <div class="form-group">
     <%= f.label :email %><br>
-    <%= f.text_field :email, class: "form-control", placeholder: "E-mail"  %>
+    <%= f.text_field :email, class: "form-control email", placeholder: "E-mail * "  %>
   </div>
   <div class="form-group">
     <%= f.label :company %><br>
-    <%= f.text_field :company, class: "form-control", placeholder: "Company"  %>
+    <%= f.text_field :company, class: "form-control company", placeholder: "Company * "  %>
   </div>
   <div class="form-group">
     <%= f.label :jobtitle %><br>
-    <%= f.text_field :jobtitle, class: "form-control", placeholder: "Job Title"  %>
+    <%= f.text_field :jobtitle, class: "form-control jobtitle", placeholder: "Job Title * "  %>
   </div>
   <div class="form-group">
     <%= f.label :phone %><br>
-    <%= f.text_field :phone, class: "form-control", placeholder: "Phone" %>
+    <%= f.text_field :phone, class: "form-control phone", placeholder: "Phone * " %>
   </div>
   <div class="form-group">
     <%= f.label :website %><br>
-    <%= f.text_field :website, class: "form-control", placeholder: "Website" %>
+    <%= f.text_field :website, class: "form-control website", placeholder: "Website * " %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Confirm', :class => "btn btn-default confirm" %>
   </div>
 <% end %>

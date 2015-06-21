@@ -7,47 +7,53 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <%= render 'header' %>
+<div class="container main">
+  <div class="content-wrapper">
+    <h1> Account </h1>
 
-<p id="notice"><%= notice %></p>
+    <div class="alert alert-success success" role="alert"></div>
+    <div class="alert alert-danger salesforce-failed" role="alert"></div>
+    <p>
+      <strong>Name:</strong>
+      <%= @user.name %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+    <p>
+      <strong>Lastname:</strong>
+      <%= @user.lastname %>
+    </p>
 
-<p>
-  <strong>Lastname:</strong>
-  <%= @user.lastname %>
-</p>
+    <p>
+      <strong>Email:</strong>
+      <%= @user.email %>
+    </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+    <p>
+      <strong>Company:</strong>
+      <%= @user.company %>
+    </p>
 
-<p>
-  <strong>Company:</strong>
-  <%= @user.company %>
-</p>
+    <p>
+      <strong>Jobtitle:</strong>
+      <%= @user.jobtitle %>
+    </p>
 
-<p>
-  <strong>Jobtitle:</strong>
-  <%= @user.jobtitle %>
-</p>
+    <p>
+      <strong>Phone:</strong>
+      <%= @user.phone %>
+    </p>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @user.phone %>
-</p>
-
-<p>
-  <strong>Website:</strong>
-  <%= @user.website %>
-</p>
-<%= link_to 'Connect with Salesforce', '/auth/salesforce'%>
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
-
+    <p>
+      <strong>Website:</strong>
+      <%= @user.website %>
+    </p>
+    <%= link_to 'Connect with Salesforce', '/auth/salesforce', class: "btn btn-default btn-salesforce", role: "button" %><br/>
+          <%= link_to 'Back', users_path, class: "btn btn-default", role: "button" %>
+    <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-default", role: "button" %> 
+  </div>
+</div>
+<%= render 'footer' %>
 </body>
 </html>

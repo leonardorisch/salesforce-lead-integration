@@ -1,31 +1,31 @@
 <%= form_tag({controller: "users", action: "create"}, method: "post") do %>
     <div class="form-group">
     <%= label_tag(:name, "Name", class: "input", id: "name") %><br>
-    <%= text_field_tag(:name, nil, class: "form-control",placeholder: "Name" ) %>
+    <%= text_field_tag(:name, nil, class: "form-control name",placeholder: "Name * " ) %>
     </div>
     <div class="form-group">
     <%= label_tag(:lastname, "Last Name", class: "input", id: "lastname") %><br>
-    <%= text_field_tag(:lastname, nil, class: "form-control",placeholder: "Last Name"  ) %>
+    <%= text_field_tag(:lastname, nil, class: "form-control lastname",placeholder: "Last Name * "  ) %>
     </div>
     <div class="form-group">
     <%= label_tag(:email, "E-mail", class: "input", id: "email") %><br>
-    <%= text_field_tag(:email, nil, class: "form-control",placeholder: "E-mail"  ) %>
+    <%= text_field_tag(:email, nil, class: "form-control email",placeholder: "E-mail * "  ) %>
     </div>
     <div class="form-group">
     <%= label_tag(:company, "Company", class: "input", id: "company") %><br>
-    <%= text_field_tag(:company, nil, class: "form-control",placeholder: "Company"  ) %>
+    <%= text_field_tag(:company, nil, class: "form-control company",placeholder: "Company * "  ) %>
     </div>
     <div class="form-group">
     <%= label_tag(:jobtitle, "Job Title", class: "input", id: "job_title") %><br>
-    <%= text_field_tag(:jobtitle, nil, class: "form-control",placeholder: "Job title"  ) %>
+    <%= text_field_tag(:jobtitle, nil, class: "form-control jobtitle",placeholder: "Job title * "  ) %>
     </div>
     <div class="form-group">
     <%= label_tag(:phone, "Phone", class: "input", id: "phone") %><br>
-    <%= text_field_tag(:phone, nil, class: "form-control",placeholder: "Phone"  ) %>
+    <%= text_field_tag(:phone, nil, class: "form-control phone",placeholder: "Phone * "  ) %>
     </div>
     <div class="form-group">
     <%= label_tag(:website, "Website", class: "input", id: "website") %><br>
-    <%= text_field_tag(:website, nil, class: "form-control",placeholder: "Website"  ) %>
+    <%= text_field_tag(:website, nil, class: "form-control website",placeholder: "Website * "  ) %>
     </div>
-  <%= submit_tag("Confirmar") %>
+  <%= submit_tag("Confirm", class: "btn btn-default confirm", role: "button") %>
 <% end %>

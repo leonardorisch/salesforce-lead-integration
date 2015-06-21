@@ -8,7 +8,7 @@ class SalesforceControllerTest < ActionController::TestCase
 
   test "should redirect to root_path" do
   	get :failure
-  	assert_redirect_to root_path + '?message=failure'
+  	assert_redirect_to user_path + '?message=salesforceok'
   end
 
 end
