@@ -14,7 +14,7 @@
     <h1> Account </h1>
 
     <div class="alert alert-success success" role="alert"></div>
-    <div class="alert alert-danger salesforce-failed" role="alert"></div>
+    <div class="alert salesforce-failed" role="alert"></div>
     <p>
       <strong>Name:</strong>
       <%= @user.name %>
@@ -49,8 +49,10 @@
       <strong>Website:</strong>
       <%= @user.website %>
     </p>
+    <div class="hidden"></div>
     <%= link_to 'Connect with Salesforce', '/auth/salesforce', class: "btn btn-default btn-salesforce", role: "button" %><br/>
           <%= link_to 'Back', users_path, class: "btn btn-default", role: "button" %>
+
     <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-default", role: "button" %> 
   </div>
 </div>

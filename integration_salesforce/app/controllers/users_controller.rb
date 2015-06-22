@@ -24,7 +24,6 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    puts @user
     User.find(params[:id]).destroy
     redirect_to root_path
   end
@@ -33,16 +32,19 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new("name"=>params[:name], "lastname"=>params[:lastname], "email"=>params[:email], "company"=>params[:company], "jobtitle"=>params[:jobtitle], "phone"=>params[:phone], "website"=>params[:website])
-
     respond_to do |format|
+    puts params
+    session[:user] = params[:id]
       if @user.save
-        format.html { redirect_to @user + '?message=createok', notice: 'User was successfully created.' }
+        session[:user] = @user.id
+        format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+    
   end
 
   # PATCH/PUT /users/1

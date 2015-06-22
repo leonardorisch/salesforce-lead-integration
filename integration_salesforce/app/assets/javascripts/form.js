@@ -2,6 +2,14 @@
 $(document).ready(function () {
 	$('.message').hide();
 	$('.success').hide();
+	$('.alert-danger .salesforce-failed').hide();
+
+	if($('.hidden').length > 1){
+		$('.hidden').text(function(){
+			window.location.href
+		})
+	}
+	
 	$('.phone').keypress(function(e){
      var key_codes = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 0, 8];
 
@@ -70,7 +78,6 @@ $(document).ready(function () {
 						return parameter;
 					});
 					return;
-
 			}
 
 			$('.success').show();
